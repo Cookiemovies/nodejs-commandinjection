@@ -15,6 +15,6 @@ This URL uses the EXECFILE function which can not chain commands
 The filename is also validated whether it does contain suspicious characters
 Additionally the Webpage output of the filename is URI encoded so safe for output
 
-#Result from Contrast Security regarding code injection
+# Result from Contrast Security regarding code injection
 
 [Contrast Security](command-injection-outfile.jpg)
