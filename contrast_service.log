@@ -132,3 +132,45 @@
 2020-11-19T16:53:03.289+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/keywords.json", "error": "file does not exist"}
 2020-11-19T16:53:03.290+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/patterns.json", "error": "file does not exist"}
 2020-11-19T16:53:03.290+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-semantic-dangerous-paths", "err": "no such rule type: cmd-injection-semantic-dangerous-paths"}
+2020-11-19T16:59:01.927+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/xxe/keywords.json", "error": "file does not exist"}
+2020-11-19T16:59:01.928+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/xxe/patterns.json", "error": "file does not exist"}
+2020-11-19T16:59:01.928+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "xxe", "err": "no such rule type: xxe"}
+2020-11-19T16:59:01.937+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/method-tampering/keywords.json", "error": "file does not exist"}
+2020-11-19T16:59:01.938+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/method-tampering/patterns.json", "error": "file does not exist"}
+2020-11-19T16:59:01.940+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-command-backdoors/keywords.json", "error": "file does not exist"}
+2020-11-19T16:59:01.940+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-command-backdoors/patterns.json", "error": "file does not exist"}
+2020-11-19T16:59:01.940+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-command-backdoors", "err": "no such rule type: cmd-injection-command-backdoors"}
+2020-11-19T16:59:01.941+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-chained-commands/keywords.json", "error": "file does not exist"}
+2020-11-19T16:59:01.942+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-chained-commands/patterns.json", "error": "file does not exist"}
+2020-11-19T16:59:01.942+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-semantic-chained-commands", "err": "no such rule type: cmd-injection-semantic-chained-commands"}
+2020-11-19T16:59:01.942+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/keywords.json", "error": "file does not exist"}
+2020-11-19T16:59:01.943+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/patterns.json", "error": "file does not exist"}
+2020-11-19T16:59:01.943+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-semantic-dangerous-paths", "err": "no such rule type: cmd-injection-semantic-dangerous-paths"}
+2020-11-19T17:10:39.401+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/xxe/keywords.json", "error": "file does not exist"}
+2020-11-19T17:10:39.402+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/xxe/patterns.json", "error": "file does not exist"}
+2020-11-19T17:10:39.402+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "xxe", "err": "no such rule type: xxe"}
+2020-11-19T17:10:39.410+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/method-tampering/keywords.json", "error": "file does not exist"}
+2020-11-19T17:10:39.410+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/method-tampering/patterns.json", "error": "file does not exist"}
+2020-11-19T17:10:39.412+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-command-backdoors/keywords.json", "error": "file does not exist"}
+2020-11-19T17:10:39.413+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-command-backdoors/patterns.json", "error": "file does not exist"}
+2020-11-19T17:10:39.413+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-command-backdoors", "err": "no such rule type: cmd-injection-command-backdoors"}
+2020-11-19T17:10:39.414+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-chained-commands/keywords.json", "error": "file does not exist"}
+2020-11-19T17:10:39.414+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-chained-commands/patterns.json", "error": "file does not exist"}
+2020-11-19T17:10:39.414+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-semantic-chained-commands", "err": "no such rule type: cmd-injection-semantic-chained-commands"}
+2020-11-19T17:10:39.415+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/keywords.json", "error": "file does not exist"}
+2020-11-19T17:10:39.416+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/patterns.json", "error": "file does not exist"}
+2020-11-19T17:10:39.416+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-semantic-dangerous-paths", "err": "no such rule type: cmd-injection-semantic-dangerous-paths"}
+2020-11-19T17:15:38.403+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/xxe/keywords.json", "error": "file does not exist"}
+2020-11-19T17:15:38.404+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/xxe/patterns.json", "error": "file does not exist"}
+2020-11-19T17:15:38.404+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "xxe", "err": "no such rule type: xxe"}
+2020-11-19T17:15:38.413+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/method-tampering/keywords.json", "error": "file does not exist"}
+2020-11-19T17:15:38.413+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/method-tampering/patterns.json", "error": "file does not exist"}
+2020-11-19T17:15:38.415+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-command-backdoors/keywords.json", "error": "file does not exist"}
+2020-11-19T17:15:38.416+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-command-backdoors/patterns.json", "error": "file does not exist"}
+2020-11-19T17:15:38.416+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-command-backdoors", "err": "no such rule type: cmd-injection-command-backdoors"}
+2020-11-19T17:15:38.417+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-chained-commands/keywords.json", "error": "file does not exist"}
+2020-11-19T17:15:38.417+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-chained-commands/patterns.json", "error": "file does not exist"}
+2020-11-19T17:15:38.417+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-semantic-chained-commands", "err": "no such rule type: cmd-injection-semantic-chained-commands"}
+2020-11-19T17:15:38.418+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/keywords.json", "error": "file does not exist"}
+2020-11-19T17:15:38.418+0100	ERROR	Rules: getJsonContent file open err	{"progname": "Contrast Service", "filePath": "/cmd-injection-semantic-dangerous-paths/patterns.json", "error": "file does not exist"}
+2020-11-19T17:15:38.418+0100	ERROR	Error when creating rule for	{"progname": "Contrast Service", "ruleID": "cmd-injection-semantic-dangerous-paths", "err": "no such rule type: cmd-injection-semantic-dangerous-paths"}

@@ -1,6 +1,7 @@
 var express = require('express')
 var app = express()
 const child_process = require('child_process');
+app.disable("x-powered-by");
 
 app.get('/', function (req, res) {
   res.send('Hello World!')
@@ -9,7 +10,7 @@ app.get('/', function (req, res) {
 app.get('/outfile', function (req, res) {
 
   child_process.exec(
-      'cat ' + req.query.file, (error, stdout, stderr) => {
+      'cat ' + req.query.filename, (error, stdout, stderr) => {
         if (error) {
         console.log('error: ', error.messsage)
         return;
@@ -20,7 +21,7 @@ app.get('/outfile', function (req, res) {
       }
       console.log('OUTPUT:\r\n', stdout);
     });
-  res.send('Possible Command Injection!: Will output a file to console: ' + req.query.file)
+  res.send('Possible Command Injection!: Will output a file to console: ' + req.query.filename)
 });
 
 app.get('/outsafe', function (req, res) {
@@ -36,7 +37,7 @@ app.get('/outsafe', function (req, res) {
       || 
       (filename.includes("|"))
       ) {
-        res.send('Filename could not be validated: ' + filename)
+        res.send('Filename could not be validated: ' + encodeURI(filename));
         console.log("Filename could not be validated: " + filename);
     return;
   }
@@ -53,7 +54,7 @@ app.get('/outsafe', function (req, res) {
       }
       console.log('OUTPUT:\r\n', stdout);
     });
-  res.send('Will output a file to console: ' + filename)
+  res.send('Will output a file to console: ' + encodeURI(filename));
 });
 
 app.post('/hello', function (req, res) {
