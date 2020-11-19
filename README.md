@@ -19,32 +19,32 @@ Additionally the Webpage output of the filename is URI encoded so safe for outpu
 
 To install this repository on your computer youe need Node.js V12 installed 
 
-Run: 
+Run:  
 
-'''
+```
 git clone https://github.com/Cookiemovies/nodejs-commandinjection  
 npm install  
-'''
+```
 
 In order to see the Contrast Security results you need to create your contrast_security.yaml file  
 
 Then run: 
 
-'''
+```
 npm install @contrast/agent 
-'''
+```
 
 For running the nodejs/express application:  
 
-'''
+```
 npm start  
-'''
+```
 
 For running the nodejs/express application including the Contrast Agent:  
 
-'''
+```
 npm contrast  
-'''
+```
 
 # Result from Contrast Security regarding code injection
 
