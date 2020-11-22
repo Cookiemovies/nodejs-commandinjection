@@ -4,7 +4,7 @@ const child_process = require('child_process');
 app.disable("x-powered-by");
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.send('<html><body><h1>Welcome to the code injection test</h1><p>Problem: <a href="http://localhost:3000/outfile?filename=outoutfile.txt|ls -a">http://localhost:3000/outfile?filename=outoutfile.txt|ls -a</a></p><p>Safe: <a href="http://localhost:3000/outsafe?filename=outoutfile.txt|ls%20-a">http://localhost:3000/outsafe?filename=outoutfile.txt|ls -a</a></p></body></html>')
 })
 
 app.get('/outfile', function (req, res) {
