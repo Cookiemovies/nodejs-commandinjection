@@ -21,7 +21,7 @@ app.get('/outfile', function (req, res) {
       }
       console.log('OUTPUT:\r\n', stdout);
     });
-  res.send('Possible Command Injection!: Will output a file to console: ' + req.query.filename)
+  res.send('<html><body><h1>Possible Command Injection!: Will output a file to console: ' + req.query.filename + ' </h1></body></html>')
 });
 
 app.get('/outsafe', function (req, res) {
@@ -37,7 +37,7 @@ app.get('/outsafe', function (req, res) {
       || 
       (filename.includes("|"))
       ) {
-        res.send('Filename could not be validated: ' + encodeURI(filename));
+        res.send('<html><body><h1>Filename could not be validated: ' + encodeURI(filename) + ' </h1></body></html>');
         console.log("Filename could not be validated: " + filename);
     return;
   }
@@ -54,7 +54,7 @@ app.get('/outsafe', function (req, res) {
       }
       console.log('OUTPUT:\r\n', stdout);
     });
-  res.send('Will output a file to console: ' + encodeURI(filename));
+  res.send('<html><body><h1>Will output a file to console: ' + encodeURI(filename) + ' </h1></body></html>');
 });
 
 app.post('/hello', function (req, res) {
