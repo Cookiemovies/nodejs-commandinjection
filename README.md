@@ -1,14 +1,14 @@
 # Command Injection in a Nodejs Server
 The parameter filename on the URL /outfile runs an EXEC function which is insecure
 
-Standard URL:
+Standard URL  
 http://localhost:3000/outfile?filename=oufile.txt
 
-URL with Code injection
+URL with Code injection  
 http://localhost:3000/outfile?filename=oufile.txt|ls%20-la
 
-Safe URL
-http://localhost:3000/outsafe?filename=oufile.txt
+Safe URL  
+http://localhost:3000/outsafe?filename=oufile.txt  
 http://localhost:3000/outsafe?filename=oufile.txt|ls%20-la
 
 This URL uses the EXECFILE function which can not chain commands
