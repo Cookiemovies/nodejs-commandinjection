@@ -2,14 +2,14 @@
 The parameter filename on the URL /outfile runs an EXEC function which is insecure
 
 Standard URL  
-http://localhost:3000/outfile?filename=oufile.txt
+http://localhost:3000/outfile?filename=outputfile.txt
 
 URL with Code injection  
-http://localhost:3000/outfile?filename=oufile.txt|ls%20-la
+http://localhost:3000/outfile?filename=outputfile.txt|ls%20-la
 
 Safe URL  
-http://localhost:3000/outsafe?filename=oufile.txt  
-http://localhost:3000/outsafe?filename=oufile.txt|ls%20-la
+http://localhost:3000/outsafe?filename=outputfile.txt  
+http://localhost:3000/outsafe?filename=outputfile.txt|ls%20-la
 
 This URL uses the EXECFILE function which can not chain commands
 The filename is also validated whether it does contain suspicious characters
