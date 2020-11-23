@@ -1,4 +1,34 @@
-var express = require('express')
+error: 2020-11-23T21:39:26.881Z 6228 contrast:rewrite - could not rewrite C:\Users\marti\Projects\nodejs-commandinjection\simpleServer.js
+error: 2020-11-23T21:39:26.884Z 6228 contrast:hooks:module - Failed to compile rewritten code for C:\Users\marti\Projects\nodejs-commandinjection\simpleServer.js, err: C:\Users\marti\Projects\nodejs-commandinjection\simpleServer.js:121
+  });  
+   ^
+
+SyntaxError: Unexpected token ')'
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Module._compile (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\agent\lib.asar\hooks\module\index.js:48:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Object.Module._extensions..js (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\agent\lib.asar\hooks\module\index.js:75:16)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at Function.Module.runMain (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\agent\bootstrap.js:35:8)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  [stack]: 'C:\\Users\\marti\\Projects\\nodejs-commandinjection\\simpleServer.js:121\n' +
+    '  });  \n' +
+    '   ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ')'\n" +
+    '    at Module._compile (internal/modules/cjs/loader.js:892:18)\n' +
+    '    at Module._compile (C:\\Users\\marti\\Projects\\nodejs-commandinjection\\node_modules\\@contrast\\agent\\lib.asar\\hooks\\module\\index.js:48:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n' +
+    '    at Object.Module._extensions..js (C:\\Users\\marti\\Projects\\nodejs-commandinjection\\node_modules\\@contrast\\agent\\lib.asar\\hooks\\module\\index.js:75:16)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:812:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n' +
+    '    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n' +
+    '    at Function.Module.runMain (C:\\Users\\marti\\Projects\\nodejs-commandinjection\\node_modules\\@contrast\\agent\\bootstrap.js:35:8)\n' +
+    '    at processTicksAndRejections (internal/process/task_queues.js:93:5)',
+  [message]: "Unexpected token ')'"
+}, rewritten code var express = require('express')
 var app = express()
 
 const child_process = require('child_process');
@@ -14,8 +44,8 @@ const possible = 'Possible Command Injection! ';
 const problem = '<p>Problem: <a href="http://localhost:3000/outfile?filename=outputfile.txt|ls -a">http://localhost:3000/outfile?filename=outputfile.txt|ls -a</a></p>';
 const safe1   = '<p>Safe 1: <a href="http://localhost:3000/outsafe?filename=outputfile.txt|ls%20-a">http://localhost:3000/outsafe?filename=outputfile.txt|ls -a</a></p>';
 const safe2   = '<p>Safe 2: <a href="http://localhost:3000/outsafe?filename=outputfile.txt">http://localhost:3000/outsafe?filename=outputfile.txt</a></p>';
-const sql     = '<p>SQL: <a href="http://localhost:3000/sql?price=50">http://localhost:3000/sql?price=50</a></p>';
-const sqlinj  = '<p>SQL Injection: <a href="http://localhost:3000/sql?price=50;SELECT * FROM PRODUCTS">http://localhost:3000/sql?price=50;SELECT * FROM PRODUCTS</a></p>';
+const sql     = '<p>SQL: <a href="http://localhost:3000/sql">http://localhost:3000/sql</a></p>';
+const sqlinj  = '<p>SQL Injection: <a href="http://localhost:3000/sql?price=50">http://localhost:3000/sql?price=50</a></p>';
 
 app.get('/', function (req, res) {
   res.send(htmlbody + welcome + problem + safe1 + safe2 + sql + sqlinj + bodyhtml)
@@ -112,14 +142,12 @@ app.get('/sql', function (req, res) {
         res.send('<html><body><h1>ERROR IN LOGIN: ' + err + '</h1></body></html>');
       }
       else {
-        var price = req.query.price ;
-        if (price == undefined) {
-          readDB('50');
-        }
-        else {
-          readDB(price);
-        }
-      }
+if (req.query.price == '') {
+  readDB('50');
+}
+else {
+  readDB(req.query.price);
+}
   });  
 
   connection.on('debug', function(text) {
@@ -164,3 +192,16 @@ var result = "<tr>";
 app.listen(3000, function () {
   console.log('Node app listening on port 3000!')
 })
+, compiling original code.
+error: 2020-11-23T21:39:26.882Z 6228 contrast:rewrite - rewrite error: 
+error: 2020-11-23T21:39:26.883Z 6228 contrast:rewrite - Error: Line 121: Unexpected token )
+    at ErrorHandler.constructError (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:5266:22)
+    at ErrorHandler.createError (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:5282:27)
+    at Parser.unexpectedTokenError (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:2033:39)
+    at Parser.throwUnexpectedToken (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:2043:21)
+    at Parser.parsePrimaryExpression (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:2413:38)
+    at Parser.inheritCoverGrammar (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:2332:37)
+    at Parser.parseLeftHandSideExpressionAllowCall (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:2979:26)
+    at Parser.inheritCoverGrammar (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:2332:37)
+    at Parser.parseUpdateExpression (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:3127:26)
+    at Parser.parseUnaryExpression (C:\Users\marti\Projects\nodejs-commandinjection\node_modules\@contrast\esprima\dist\esprima.js:3171:26)

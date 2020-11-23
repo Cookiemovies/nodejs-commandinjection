@@ -21,7 +21,8 @@
     "mocha": "^3.2.0",
     "nock": "^9.0.11",
     "should": "^11.2.1",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "tedious": "^9.2.1"
   },
   "repository": {
     "type": "git",
