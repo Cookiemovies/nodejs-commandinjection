@@ -1,4 +1,4 @@
-# Command Injection in a Nodejs Server
+# Command and SQL Injection in a Nodejs + Express Server
 The parameter filename on the URL /outfile runs an EXEC function which is insecure
 
 Standard URL  
@@ -14,6 +14,11 @@ http://localhost:3000/outsafe?filename=outputfile.txt|ls%20-la
 This URL uses the EXECFILE function which can not chain commands
 The filename is also validated whether it does contain suspicious characters
 Additionally the Webpage output of the filename is URI encoded so safe for output
+
+SQL Injection  
+http://localhost:3000/sql?price=50
+http://localhost:3000/sql?price=50;SELECT * FROM PRODUCTS
+
 
 # Install and run
 
