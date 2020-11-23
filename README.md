@@ -16,8 +16,8 @@ The filename is also validated whether it does contain suspicious characters
 Additionally the Webpage output of the filename is URI encoded so safe for output
 
 SQL Injection  
-http://localhost:3000/sql?price=50
-http://localhost:3000/sql?price=50;SELECT * FROM PRODUCTS
+http://localhost:3000/sql?price=50  
+http://localhost:3000/sql?price=50;SELECT%20*%20FROM%20PRODUCTS  
 
 
 # Install and run
